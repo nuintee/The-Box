@@ -1,0 +1,40 @@
+{
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="crossorigin="anonymous"></script>
+    <script type="text/javascript" src = "anim.js"></script>
+    <?php require "connection.php" ?>
+  </head>
+  <body>
+    <div class="contents">
+      <ul>
+        <li><img class = "title-logo" src="./images/logo.png" alt=""></li>
+        <li class = "actions"><button class = "btn cancel"></button></li>
+        <li class = "actions"><canvas></canvas></li>
+        <li class = "actions"><button class = "btn send"></button></li>
+      </ul>
+    </div>
+    <div class = "info">
+      <div class = "info-contents-wrapper">
+        <div class="info-contents">
+          <h2>ABOUT</h2>
+          <p>The box is a place where you can interact with random people by sharing and recieving any files.</p>
+
+          <h2>RECIEVE</h2>
+          <p>Just click on the box when it's full. (Reload or Send to recieve again)</p>
+
+          <h2>SEND</h2>
+          <p>Drag and drop or browse to add files to the box. then just press send button.</p>
+        </div>
+      </div>
+      <button class = "q-btn"></button>
+    </div>
+    <script type="text/javascript" src = "index.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,127 @@
+
+:root{
+  --bg:#161616;
+  --title:#202020;
+  --frame:#FFF;
+  --q:#1E1E1E;
+  --q-txt:#656565;
+  --red:#FF3939;
+  --blue:#0077FF;
+  --rgba:rgba(0, 0, 0, 0.16);
+  --shadow:0 10px 6px var(--rgba);
+  --cancel:url("./images/cancel.png");
+  --cancel-active:url("./images/cancel-active.png");
+  --send:url("./images/send.png");
+  --send-active:url("./images/send-active.png");
+}
+
+html{
+  user-select: none; /* CSS3 */
+  -moz-user-select: none; /* Firefox */
+  -webkit-user-select: none; /* Safari、Chromeなど */
+  -ms-user-select: none; /* IE10かららしい */
+}
+
+body{
+  background-color: var(--bg);
+  font-family: "Baloo Bhai 2",cursive;
+}
+
+button:focus{
+  outline: 0;
+}
+
+h2{
+  color:#fff;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+p{
+  color:var(--q-txt);
+  margin:2px 10%;
+}
+
+.title-logo{
+  height: auto;
+  width: 50vh;
+  margin: 6vh 0;
+}
+
+.contents ul{
+  text-align:center;
+}
+
+.actions{
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 2vh;
+}
+
+.btn{
+  height: 10vh;
+  width: 10vh;
+  border: none;
+  background: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  cursor: pointer;
+}
+
+/** Cancel Button **/
+.btn.cancel{
+  background-image: var(--cancel);
+}.btn.cancel:hover{
+  background-image: var(--cancel-active);
+}
+
+/** Send Button **/
+.btn.send{
+  background-image: var(--send);
+}.btn.send:hover{
+  background-image: var(--send-active);
+}
+
+canvas{
+  height: 50vh;
+  width:50vh;
+  background-color: transparent;
+  border-radius: 2em;
+  border:2vh solid var(--frame);
+  filter: drop-shadow(var(--shadow));
+}
+
+.info-contents-wrapper{
+  height: 100%;
+  width: 25%;
+  position: absolute;
+  margin: 0vh;
+  bottom: 0;
+  right: 0;
+  background-color:var(--q);
+  text-align: center;
+  border-radius: 50px 0 0 50px;
+  display: none;
+}
+
+.info-contents{
+  position: relative;
+  top: 5%;
+}
+
+.q-btn{
+  height:8vh;
+  width: 8vh;
+  background-image:url("./images/q.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border:none;
+  position: absolute;
+  bottom: 7vh;
+  right: 7vh;
+  cursor: pointer;
+}.q-btn.active{
+  background-image:url("./images/q-active.png");
+}
